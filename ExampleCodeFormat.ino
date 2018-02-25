@@ -11,10 +11,13 @@
 // Stand:         14.01.2018
 // ========================================================================================
 
+
+
+
 // ========================================================================================
 // function variables
 
-int16_t mCounter = 0;                                   // it is only a counter 
+int16_t mCounter = 0;                               // it is only a counter 
 
 // ========================================================================================
 void setup() {
@@ -32,10 +35,9 @@ void loop() {
     Serial.println(mCounter);
   }
   
-  int16_t stateValue = 0;                               // local variable for todo anything
+  int16_t stateValue = 0;                           // local variable for todo anything
 
   if(mCounter % 100 == 10) {                        // if counter a modulo of 10
-    
     stateValue = mCounter;                          // get actual counter value
   }
 
@@ -49,6 +51,7 @@ void loop() {
 // ========================================================================================
 // do things with a value
 // ----------------------------------------------------------------------------------------
+// value = the int value is being prepare for string output.
 void doAnything(int value) {
   String strValue = String(value);
   char chrValue[6];
